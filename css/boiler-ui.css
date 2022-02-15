@@ -1,0 +1,356 @@
+@charset "UTF-8";
+/*!
+ * BoilerUI v1.0
+ * Author: Sanket Raut
+ */
+
+ html{
+     font-size: 62.5%;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+
+/*background colors START*/
+
+ .bui-bg-primary{
+     background: #2563EB !important;
+     color: white !important;
+}
+
+.bui-bg-secondary{
+    background: #4B5563 !important;
+    color: white !important;
+}
+
+.bui-bg-success{
+    background: #059669 !important;
+    color: white !important;
+}
+
+.bui-bg-info{
+    background: #7C3AED !important;
+    color: white !important;
+}
+
+.bui-bg-warning{
+    background: #D97706 !important;
+    color: white !important;
+}
+
+.bui-bg-danger{
+    background: #DC2626 !important;
+    color: white !important;
+}
+
+.bui-bg-light{
+    background: #F3F4F6 !important;
+    color: #111827 !important;
+}
+
+.bui-bg-dark{
+    background: #111827 !important;
+    color: white !important;
+}
+
+/*background colors END*/
+
+/*avatar component START*/
+
+ .bui-avatar{
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+     background: #D1D5DB;
+     color: #4B5563;
+     width: 4.8rem;
+     height: 4.8rem;
+     border-radius: 50%;
+     font-size: 1.4rem;
+     letter-spacing: 0.1rem;
+     position: relative;
+ }
+
+ .bui-avatar > img{
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+ }
+/*avatar component END*/
+
+/*Alert component START*/
+.bui-alert{
+    display: flex;
+    align-items: center;
+    background: #E5E7EB;
+    font-size: 1.6rem;
+    color: #6b7280;
+    padding: 1.5rem;
+    width: 100%;
+    border-radius: 0.3rem;
+    border: solid 1px #dfe2e9;
+}
+
+.bui-alert p{
+    margin: 0;
+}
+
+.bui-alert a{
+    color: #6b7280;
+    font-weight: bold;
+}
+
+.bui-alert-close{
+    color: #6b7280;
+    margin-left: auto;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.bui-alert-primary{
+    color: #084298;
+    background-color: #cfe2ff;
+    border-color: #b6d4fe;
+}
+
+.bui-alert-primary a,.bui-alert-primary .bui-alert-close{
+    color: #1E40AF;
+}
+
+.bui-alert-secondary{
+    color: #41464b;
+    background-color: #e2e3e5;
+    border-color: #d3d6d8;
+}
+
+.bui-alert-secondary a,.bui-alert-secondary .bui-alert-close{
+    color: #41464b;
+}
+
+.bui-alert-success{
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+
+.bui-alert-success a,.bui-alert-success .bui-alert-close{
+    color: #0f5132;
+}
+
+.bui-alert-info{
+    color: #7C3AED;
+    background-color: #dfd5f0;
+    border-color: #d5c3f2;
+}
+
+.bui-alert-info a,.bui-alert-info .bui-alert-close{
+    color: #7C3AED;
+}
+
+.bui-alert-warning{
+    color: #D97706;
+    background-color: #f0dec8;
+    border-color: #eed3b1;
+}
+
+.bui-alert-warning a,.bui-alert-warning .bui-alert-close{
+    color: #D97706;
+}
+
+.bui-alert-danger{
+    color: #DC2626;
+    background-color: #f4d4d4;
+    border-color: #f6baba;
+}
+
+.bui-alert-danger a,.bui-alert-danger .bui-alert-close{
+    color: #DC2626;
+}
+
+.bui-alert-light{
+    color: #636464;
+    background-color: #fefefe;
+    border-color: #fdfdfe;
+}
+
+.bui-alert-light a,.bui-alert-light .bui-alert-close{
+    color: #636464;
+}
+
+.bui-alert-dark{
+    color: #141619;
+    background-color: #d3d3d4;
+    border-color: #bcbebf;
+}
+
+.bui-alert-dark a,.bui-alert-dark .bui-alert-close{
+    color: #141619;
+}
+/*Alert component END*/
+
+/*BADGE component START*/
+.bui-badge{
+    display: inline-block;
+    background: #E5E7EB;
+    color: #6b7280;
+    padding: 0.3rem 0.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+}
+
+.bui-badge-round{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E5E7EB;
+    color: #6b7280;
+    padding: 0.3rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 50%;
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.bui-badge-absolute{
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+}
+
+/*BADGE component END*/
+
+/*Button component START*/
+.bui-btn{
+    background: #E5E7EB;
+    color: #6b7280;
+    border: transparent;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 0.3rem;
+    margin: 0.25rem 0.125rem;
+}
+
+
+.bui-btn-primary{
+    background: #2563EB;
+    color: white;
+    border-color: #2563EB;
+}
+
+.bui-btn-primary:hover,.bui-btn-primary:active{
+    background: #084ee6;
+}
+
+.bui-btn-secondary{
+    background: #e2e3e5;
+    color: #41464b;
+    border-color: #e2e3e5;
+}
+
+.bui-btn-secondary:hover,.bui-btn-secondary:active{
+    background: #d1d2d4;
+}
+
+.bui-btn-success{
+    background: #059669;
+    color: white;
+    border-color: #059669;
+}
+
+.bui-btn-success:hover,.bui-btn-success:active{
+    background: #067451;
+}
+
+.bui-btn-warning{
+    background: #D97706;
+    color: white;
+    border-color: #D97706;
+}
+
+.bui-btn-warning:hover,.bui-btn-warning:active{
+    background: #b86507;
+}
+
+.bui-btn-danger{
+    background: #DC2626;
+    color: white;
+    border-color: #DC2626;
+}
+
+.bui-btn-danger:hover,.bui-btn-danger:active{
+    background: #b12626;
+}
+
+.bui-btn-info{
+    background: #7C3AED;
+    color: white;
+    border-color: #7C3AED;
+}
+
+.bui-btn-info:hover,.bui-btn-info:active{
+    background: #5d2cb1;
+}
+
+.bui-btn-light{
+    background: #F3F4F6;
+    color: #111827;
+    border-color: #F3F4F6;
+}
+
+.bui-btn-light:hover,.bui-btn-light:active{
+    background: #c2c2c2;
+}
+
+.bui-btn-dark{
+    background: #111827;
+    color: white;
+    border-color: #111827;
+}
+
+.bui-btn-dark:hover,.bui-btn-dark:active{
+    background: #1b2535;
+}
+
+.bui-btn-link{
+    background: none;
+    color: #2563EB;
+    border-color: transparent;
+}
+
+.bui-btn-lg{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+}
+
+.bui-btn-sm{
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+}
+
+.bui-btn-round{
+    border-radius: 50%;
+    width: 4.8rem;
+    height: 4.8rem;
+    padding: 1rem;
+}
+/*Button component END*/
+ 
+/*position compoent START*/
+.bui-position-rb-fixed{
+    position: fixed;
+    bottom: 0.8rem;
+    right: 0.8rem;   
+    z-index: 99;
+}
+
+.bui-position-lb-fixed{
+    position: fixed;
+    bottom: 0.8rem;
+    left: 0.8rem;   
+    z-index: 99;
+}
+/*position component END*/
