@@ -23,6 +23,22 @@
 }
  /*Shadow class END*/
 
+  /*image Class START*/
+.bui-img-fluid{
+    width: 100%;
+    height: auto;
+}
+
+.bui-img-round{ 
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+ /*image class END*/
+
  /*Text colors START*/
 .bui-text-white{
     color: white;
@@ -464,3 +480,33 @@
 }
 
 /*CARD compoent END*/
+
+/*form control START*/
+.bui-form-label{
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.bui-form-control{
+    display: block;
+    width: 100%;
+    padding: 0.6rem 1rem;
+    font-size: 1.6rem;
+    border-radius: 3px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    color: black;
+}
+
+.bui-form-control:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+
+/*Form control END*/
