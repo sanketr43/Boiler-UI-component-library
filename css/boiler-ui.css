@@ -232,6 +232,7 @@
     font-size: 1.4rem;
     border-radius: 0.3rem;
     margin: 0.25rem 0.125rem;
+    text-decoration: none;
 }
 
 
@@ -354,3 +355,45 @@
     z-index: 99;
 }
 /*position component END*/
+
+/*CARD compoent START*/
+.bui-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    font-size: 1.4rem;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+.bui-card-img-top{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    position: relative;
+}
+
+.bui-card-body{
+    padding: 1.5rem 1.5rem;
+    flex: 1 1 auto;
+}
+
+.bui-card-title{
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.bui-card-text{
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/*CARD compoent END*/
