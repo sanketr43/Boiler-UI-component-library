@@ -9,6 +9,26 @@
      font-family: Arial, Helvetica, sans-serif;
  }
 
+ /*Shadow Class START*/
+.bui-shadow-sm{
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;
+}
+
+.bui-shadow{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+.bui-shadow-lg{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+ /*Shadow class END*/
+
+ /*Text colors START*/
+.bui-text-white{
+    color: white;
+}
+
+ /*Text colors ENDS*/
 
 /*background colors START*/
 
@@ -394,6 +414,53 @@
     font-size: 1.4rem;
     margin-top: 0;
     margin-bottom: 1rem;
+}
+
+.bui-card-badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    background: #979797;
+    color: white;
+    text-transform: uppercase;
+    padding: 0.5rem 2rem;
+    top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.bui-card-img{
+    position: relative;
+}
+
+.bui-card-img-overlay{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+}
+
+.bui-card-row{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    font-size: 1.4rem;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+.bui-card-img-left{
+    width: 20rem;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    position: relative;
 }
 
 /*CARD compoent END*/
