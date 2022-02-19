@@ -4,6 +4,19 @@
  * Author: Sanket Raut
  */
 
+ @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+ :root{
+     --bui-primary: #2563EB;
+     --bui-secondary: #4B5563;
+     --bui-success: #059669;
+     --bui-info: #7C3AED;
+     --bui-warning: #D97706;
+     --bui-danger: #DC2626;
+     --bui-light: #F3F4F6;
+     --bui-dark: #111827;
+ }
+
  html{
      font-size: 100%;
      font-family: Arial, Helvetica, sans-serif;
@@ -41,50 +54,52 @@
 
  /*Text colors START*/
 .bui-text-white{
-    color: white;
+    color: white !important;
 }
 
+.bui-text-gray{
+    color: gray !important;
+}
  /*Text colors ENDS*/
 
 /*background colors START*/
-
  .bui-bg-primary{
-     background: #2563EB !important;
+     background: var(--bui-primary) !important;
      color: white !important;
 }
 
 .bui-bg-secondary{
-    background: #4B5563 !important;
+    background: var(--bui-secondary) !important;
     color: white !important;
 }
 
 .bui-bg-success{
-    background: #059669 !important;
+    background: var(--bui-success) !important;
     color: white !important;
 }
 
 .bui-bg-info{
-    background: #7C3AED !important;
+    background: var(--bui-info) !important;
     color: white !important;
 }
 
 .bui-bg-warning{
-    background: #D97706 !important;
+    background: var(--bui-warning) !important;
     color: white !important;
 }
 
 .bui-bg-danger{
-    background: #DC2626 !important;
+    background: var(--bui-danger) !important;
     color: white !important;
 }
 
 .bui-bg-light{
-    background: #F3F4F6 !important;
-    color: #111827 !important;
+    background: var(--bui-light) !important;
+    color: var(--bui-dark) !important;
 }
 
 .bui-bg-dark{
-    background: #111827 !important;
+    background: var(--bui-dark) !important;
     color: white !important;
 }
 
@@ -177,33 +192,33 @@
 }
 
 .bui-alert-info{
-    color: #7C3AED;
+    color: var(--bui-info);
     background-color: #dfd5f0;
     border-color: #d5c3f2;
 }
 
 .bui-alert-info a,.bui-alert-info .bui-alert-close{
-    color: #7C3AED;
+    color: var(--bui-info);
 }
 
 .bui-alert-warning{
-    color: #D97706;
+    color: var(--bui-warning);
     background-color: #f0dec8;
     border-color: #eed3b1;
 }
 
 .bui-alert-warning a,.bui-alert-warning .bui-alert-close{
-    color: #D97706;
+    color: var(--bui-warning);
 }
 
 .bui-alert-danger{
-    color: #DC2626;
+    color: var(--bui-danger);
     background-color: #f4d4d4;
     border-color: #f6baba;
 }
 
 .bui-alert-danger a,.bui-alert-danger .bui-alert-close{
-    color: #DC2626;
+    color: var(--bui-danger);
 }
 
 .bui-alert-light{
@@ -275,9 +290,9 @@
 
 
 .bui-btn-primary{
-    background: #2563EB;
+    background: var(--bui-primary);
     color: white;
-    border-color: #2563EB;
+    border-color: var(--bui-primary);
 }
 
 .bui-btn-primary:hover,.bui-btn-primary:active{
@@ -295,9 +310,9 @@
 }
 
 .bui-btn-success{
-    background: #059669;
+    background: var(--bui-success);
     color: white;
-    border-color: #059669;
+    border-color: var(--bui-success);
 }
 
 .bui-btn-success:hover,.bui-btn-success:active{
@@ -305,9 +320,9 @@
 }
 
 .bui-btn-warning{
-    background: #D97706;
+    background: var(--bui-warning);
     color: white;
-    border-color: #D97706;
+    border-color: var(--bui-warning);
 }
 
 .bui-btn-warning:hover,.bui-btn-warning:active{
@@ -315,9 +330,9 @@
 }
 
 .bui-btn-danger{
-    background: #DC2626;
+    background: var(--bui-danger);
     color: white;
-    border-color: #DC2626;
+    border-color: var(--bui-danger);
 }
 
 .bui-btn-danger:hover,.bui-btn-danger:active{
@@ -325,9 +340,9 @@
 }
 
 .bui-btn-info{
-    background: #7C3AED;
+    background: var(--bui-info);
     color: white;
-    border-color: #7C3AED;
+    border-color: var(--bui-info);
 }
 
 .bui-btn-info:hover,.bui-btn-info:active{
@@ -335,9 +350,9 @@
 }
 
 .bui-btn-light{
-    background: #F3F4F6;
-    color: #111827;
-    border-color: #F3F4F6;
+    background: var(--bui-light);
+    color: var(--bui-dark);
+    border-color: var(--bui-light);
 }
 
 .bui-btn-light:hover,.bui-btn-light:active{
@@ -345,9 +360,9 @@
 }
 
 .bui-btn-dark{
-    background: #111827;
+    background: var(--bui-dark);
     color: white;
-    border-color: #111827;
+    border-color: var(--bui-dark);
 }
 
 .bui-btn-dark:hover,.bui-btn-dark:active{
@@ -356,7 +371,7 @@
 
 .bui-btn-link{
     background: none;
-    color: #2563EB;
+    color: var(--bui-primary);
     border-color: transparent;
 }
 
@@ -378,7 +393,7 @@
 }
 /*Button component END*/
  
-/*position compoent START*/
+/*position component START*/
 .bui-position-rb-fixed{
     position: fixed;
     bottom: 0.8rem;
@@ -394,7 +409,7 @@
 }
 /*position component END*/
 
-/*CARD compoent START*/
+/*CARD component START*/
 .bui-card{
     position: relative;
     display: flex;
@@ -481,9 +496,9 @@
     position: relative;
 }
 
-/*CARD compoent END*/
+/*CARD component END*/
 
-/*form control START*/
+/*form control component START*/
 .bui-form-label{
     display: inline-block;
     font-size: 0.875rem;
@@ -511,7 +526,7 @@
 }
 
 .bui-is-valid{
-    border-color: #059669;
+    border-color: var(--bui-success);
 }
 
 .bui-is-valid:focus{
@@ -521,13 +536,13 @@
 
 .bui-valid-feedback{
     display: block;
-    color: #059669;
+    color: var(--bui-success);
     margin-top: 5px;
     font-size: 0.875rem;
 }
 
 .bui-is-invalid{
-    border-color: #DC2626;
+    border-color: var(--bui-danger);
 }
 
 .bui-is-invalid:focus{
@@ -537,7 +552,7 @@
 
 .bui-invalid-feedback{
     display: block;
-    color: #DC2626;
+    color: var(--bui-danger);
     margin-top: 5px;
     font-size: 0.875rem;
 }
