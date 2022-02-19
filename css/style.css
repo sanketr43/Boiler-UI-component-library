@@ -1,25 +1,210 @@
 body{
-    background-color: aliceblue;
+    background: #fff;
+    margin: 0;
 }
 
-.component{
+.navbar{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 20px;
-    gap: 10px;
+    background: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    z-index: 99;
 }
 
-.component-block-row{
+.navbar-logo{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+
+.navbar-menu{
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 1rem;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.navbar-menu ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar-menu ul li{
+    display: inline-block;
+    padding: 4px 8px;
+}
+
+.navbar-menu ul li a{
+    color: white;
+}
+
+.mobile-menu{
+    padding: 5px 10px;
+    border: solid 1px white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: auto;
+    display: none;
+}
+
+/*Documentation CSS*/
+div.main-body {
+	display: grid;
+	grid-template-columns: minmax(250px , auto)1fr;
+	grid-template-areas: "navbar mainContent";
+	grid-gap: 20px;
+    position: relative;
+}
+
+nav#navbar {
+	grid-area: navbar;
+	position: fixed;
+    padding: 80px 20px 20px 20px;
+    border-right: solid 1px #CCC;
+    height: 86vh;
+    min-width: 150px;
+    overflow: auto;
+    background: white;
+    z-index: 89;
+    -webkit-transition: all .2s linear 0s;
+    transition: all .2s linear 0s;
+}
+
+nav#navbar a {
+	display: flex;
+    align-items: center;
+	padding: 5px;
+	margin: 5px 0;
+	text-decoration: none;
+	color: black;
+    cursor: pointer;
+}
+
+nav#navbar a::before {
+    width: 1.25em;
+    line-height: 0;
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    transition: transform 0.35s ease;
+    transform-origin: 0.5em 50%;
+}
+
+nav#navbar a:hover,nav#navbar a:active,nav#navbar a:focus{
+    color: var(--bui-primary);
+}
+
+main#main-doc {
+	grid-area: mainContent;
+    padding: 80px 20px 20px 20px;
+    min-width: 0;
+}
+
+#main-doc section{
+    min-height: 100vh;
+    scroll-margin: 80px;
+}
+
+header {
+	font-size: 1rem;
+	font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+code {
+    font-size: 1rem;
+    color: #d63384;
+    word-wrap: break-word;
+    unicode-bidi: bidi-override;
+}
+
+p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bui-example{
+    position: relative;
+    border: solid #dee2e6;
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 1px;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    margin-bottom: 20px;
+}
+
+.bui-example-center{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.component-block-column{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+.bui-code-example{
+    margin-bottom: 20px;
+}
+
+/*Documentation CSS END*/
+
+
+@media screen and (max-width: 768px) {
+    .navbar-menu{
+        margin-left: 20px;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+    
+    nav#navbar{
+        left: -200px;
+        height: 90vh;
+    }
+
+    div.main-body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    nav#navbar.active-nav{
+        left: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 640px) {
+    .navbar-logo{
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar-logo{
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .navbar-logo{
+        font-size: 10px;
+    }
+
+    .mobile-menu{
+        font-size: 12px;
+    }
+
+    .navbar-menu {
+        margin-right: 10px;
+    }
 }

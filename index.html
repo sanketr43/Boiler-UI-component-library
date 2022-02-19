@@ -7,247 +7,384 @@
     <title>Boiler UI Component Library</title>
     <link rel="stylesheet" href="css/boiler-ui.css">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="component">
-        <h1>Avatar Component (Text/Image)</h1>
-        <div class="component-block-row">
-            <div class="bui-avatar">GR</div>
-            <div class="bui-avatar bui-bg-primary">SR</div>
-            <div class="bui-avatar bui-bg-secondary">SR</div>
-            <div class="bui-avatar bui-bg-success">SR</div>
-            <div class="bui-avatar bui-bg-info">SR</div>
-            <div class="bui-avatar"><img src="https://mui.com/static/images/avatar/2.jpg" alt="bui-avatar"></div>
-            <div class="bui-avatar"><img src="https://mui.com/static/images/avatar/1.jpg" alt="bui-avatar"></div>
+    <div class="navbar">
+        <div class="navbar-logo">BoilerUI Component Library</div>
+        <div class="mobile-menu" onclick="toggleNav();"><i class="bi bi-list"></i></div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a href="https://github.com/sanketr43/Boiler-UI-component-library" target="_blank"><i class="bi bi-github"></i></a></li>
+                <li><a href="https://twitter.com/the_sanketraut" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/sanket-raut/" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+            </ul>
         </div>
     </div>
 
-    <div class="component">
-        <h1>Alert Component</h1>
-        <div class="bui-alert">
-            <p>A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
-            <button class="bui-alert-close">X</button>
-        </div>
-
-        <div class="bui-alert bui-alert-primary">
-            <p>A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
-            <button class="bui-alert-close">X</button>
-        </div>
-
-        <div class="bui-alert bui-alert-secondary">
-            <p>A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
-            <button class="bui-alert-close">X</button>
-        </div>
-
-        <div class="bui-alert bui-alert-success">
-            <p>A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
-            <button class="bui-alert-close">X</button>
-        </div>
-
-        <div class="bui-alert bui-alert-info">
-            <p>A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
-            <button class="bui-alert-close">X</button>
-        </div>
-
-        <div class="bui-alert bui-alert-warning">
-            <p>A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
-            <button class="bui-alert-close">X</button>
-        </div>
-
-        <div class="bui-alert bui-alert-danger">
-            <p>A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
-            <button class="bui-alert-close">X</button>
-        </div>
-
-        <div class="bui-alert bui-alert-light">
-            <p>A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
-            <button class="bui-alert-close">X</button>
-        </div>
-
-        <div class="bui-alert bui-alert-dark">
-            <p>A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
-            <button class="bui-alert-close">X</button>
-        </div>
-    </div>
-
-    <div class="component">
-        <h1>Badge Component</h1>
-        <div class="component-block-row">
-            <span class="bui-badge">Default</span>
-            <span class="bui-badge bui-bg-primary">Primary</span>
-            <span class="bui-badge bui-bg-secondary">Secondary</span>
-            <span class="bui-badge bui-bg-success">Success</span>
-            <span class="bui-badge bui-bg-danger">Danger</span>
-            <span class="bui-badge bui-bg-warning">Warning</span>
-            <span class="bui-badge bui-bg-info">Info</span>
-            <span class="bui-badge bui-bg-light">Light</span>
-            <span class="bui-badge bui-bg-dark">Dark</span>
-        </div>
-        <div class="component-block-row">
-            <div class="bui-avatar bui-bg-primary">SR<span class="bui-badge-round bui-badge-absolute bui-bg-success">12</span></div>
-            <div class="bui-avatar"><img src="https://mui.com/static/images/avatar/1.jpg" alt="bui-avatar"><span class="bui-badge-round bui-badge-absolute bui-bg-info">0</span></div>
-        </div>
-    </div>
-
-    <div class="component">
-        <h1>Button Component</h1>
-        <div class="component-block-row">
-            <button class="bui-btn">Default</button>
-            <button class="bui-btn bui-btn-primary">Primary</button>
-            <button class="bui-btn bui-btn-secondary">Secondary</button>
-            <button class="bui-btn bui-btn-success">Success</button>
-            <button class="bui-btn bui-btn-danger">Danger</button>
-            <button class="bui-btn bui-btn-warning">Warning</button>
-            <button class="bui-btn bui-btn-info">Info</button>
-            <button class="bui-btn bui-btn-light">Light</button>
-            <button class="bui-btn bui-btn-dark">Dark</button>
-            <button class="bui-btn bui-btn-link">Link</button>
-        </div>
-        <div class="component-block-row">
-            <button class="bui-btn bui-btn-lg">Default</button>
-            <button class="bui-btn bui-btn-primary bui-btn-lg">Primary</button>
-            <button class="bui-btn bui-btn-secondary bui-btn-lg">Secondary</button>
-            <button class="bui-btn bui-btn-success bui-btn-lg">Success</button>
-            <button class="bui-btn bui-btn-danger bui-btn-lg">Danger</button>
-            <button class="bui-btn bui-btn-warning bui-btn-lg">Warning</button>
-            <button class="bui-btn bui-btn-info bui-btn-lg">Info</button>
-            <button class="bui-btn bui-btn-light bui-btn-lg">Light</button>
-            <button class="bui-btn bui-btn-dark bui-btn-lg">Dark</button>
-            <button class="bui-btn bui-btn-link bui-btn-lg">Link</button>
-        </div>
-        <div class="component-block-row">
-            <button class="bui-btn bui-btn-sm">Default</button>
-            <button class="bui-btn bui-btn-primary bui-btn-sm">Primary</button>
-            <button class="bui-btn bui-btn-secondary bui-btn-sm">Secondary</button>
-            <button class="bui-btn bui-btn-success bui-btn-sm">Success</button>
-            <button class="bui-btn bui-btn-danger bui-btn-sm">Danger</button>
-            <button class="bui-btn bui-btn-warning bui-btn-sm">Warning</button>
-            <button class="bui-btn bui-btn-info bui-btn-sm">Info</button>
-            <button class="bui-btn bui-btn-light bui-btn-sm">Light</button>
-            <button class="bui-btn bui-btn-dark bui-btn-sm">Dark</button>
-            <button class="bui-btn bui-btn-link bui-btn-sm">Link</button>
-        </div>
-        <div>
-            <button class="bui-btn bui-btn-primary"><i class="bi bi-facebook"></i> Facebook</button>
-            <button class="bui-btn bui-btn-info"><i class="bi bi-twitter"></i> Twitter</button>
-        </div>
-        <div>
-            <div class="bui-position-rb-fixed">
-                <button class="bui-btn bui-btn-round bui-btn-primary"><i class="bi bi-plus-lg"></i></button>
-            </div>
-            <div class="bui-position-lb-fixed">
-                <button class="bui-btn bui-btn-round bui-btn-success"><i class="bi bi-plus-lg"></i></button>
-            </div>
-        </div>
-    </div>
-
-    <div class="component">
-        <h1>Card Component</h1>
-    </div>
-    <div class="bui-card">
-        <div class="bui-card-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-    </div>
-
-    <br>
-
-    <div class="bui-card">
-        <div class="bui-card-body">
-            <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
-            <p class="bui-card-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
-            <button class="bui-btn bui-btn-primary">Go somewhere</button>
-        </div>
-    </div>
-
-    <br>
-
-    <div style="display: flex;gap: 10px;align-items: flex-start;flex-wrap: wrap;">
-        <div class="bui-card" style="width: 28rem;">
-            <img class="bui-card-img-top" src="https://www.watermark-image.com/watermarking-examples/Resized/tsr-watermark-image-example-pixabay.com-en-sky-sunset-mountain-clouds-cloud-56308.jpg" alt="card-image">
-            <div class="bui-card-body">
-                <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
-                <p class="bui-card-text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-                <button class="bui-btn bui-btn-primary">Add to cart</button>
-                <button class="bui-btn bui-btn-info"><i class="bi bi-heart"></i></button>
-            </div>
-        </div>
-    
-        <div class="bui-card" style="width: 28rem;">
-            <div class="bui-card-badge bui-bg-danger">Trending</div>
-            <div class="bui-card-img">
-                <img class="bui-card-img-top" src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" alt="card-image">
-                <div class="bui-card-img-overlay">
-                    <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
-                    <p class="bui-card-text">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <div class="main-body">
+        <nav id="navbar">
+            <header>Components</header>
+            <a onclick="scrollMenu('buiAvatar');" class="nav-link">Avatar</a>
+            <a onclick="scrollMenu('buiAlert');" class="nav-link">Alert</a>
+            <a onclick="scrollMenu('buiBadge');" class="nav-link">Badge</a>
+            <a onclick="scrollMenu('buiButton');" class="nav-link">Button</a>
+            <a onclick="scrollMenu('buiCard');" class="nav-link">Card</a>
+            <a onclick="scrollMenu('buiImage');" class="nav-link">Image</a>
+            <a onclick="scrollMenu('buiInput');" class="nav-link">Input</a>
+        </nav>
+  
+        <main id="main-doc">
+            <section class="main-section" id="buiAvatar">
+                <header><i class="bi bi-bookmark-fill"></i> Avatar</header>
+                <p>Avatar can be created by class name as <code>.bui-avatar</code> to <code>div</code> element.</p>
+                
+                <header><i class="bi bi-chevron-right"></i> Image Avatars</header>
+                <div class="bui-example bui-example-center">
+                    <div class="bui-avatar"><img src="https://mui.com/static/images/avatar/1.jpg" alt="bui-avatar"></div>
+                    <div class="bui-avatar"><img src="https://mui.com/static/images/avatar/2.jpg" alt="bui-avatar"></div>
+                    <div class="bui-avatar"><img src="https://mui.com/static/images/avatar/3.jpg" alt="bui-avatar"></div>
                 </div>
-            </div>
-        </div>
+                
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <div class="bui-avatar"><img src="https://mui.com/static/images/avatar/1.jpg" alt="bui-avatar"></div>
+                <div class="bui-avatar"><img src="https://mui.com/static/images/avatar/2.jpg" alt="bui-avatar"></div>
+                <div class="bui-avatar"><img src="https://mui.com/static/images/avatar/3.jpg" alt="bui-avatar"></div>
+                </code></pre>
+                </div>
+                
 
-        <div class="bui-card" style="width: 28rem;">
-            <div class="bui-card-badge bui-bg-primary">New</div>
-            <img class="bui-card-img-top" src="https://picjumbo.com/wp-content/uploads/view-of-the-golden-gate-bridge-vertical-free-photo-1080x1620.jpg" alt="card-image">
-            <div class="bui-card-body">
-                <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
-                <p class="bui-card-text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-                <button class="bui-btn bui-btn-primary">Go somewhere</button>
-                <button class="bui-btn bui-btn-info"><i class="bi bi-heart"></i></button>
-            </div>
-        </div>
+                <header><i class="bi bi-chevron-right"></i> Letter Avatars</header>
+                <div class="bui-example bui-example-center">
+                    <div class="bui-avatar">SR</div>
+                    <div class="bui-avatar bui-bg-primary">AD</div>
+                    <div class="bui-avatar bui-bg-info">FA</div>
+                </div>
 
-        <div class="bui-card-row bui-shadow" style="width: 60rem;">
-            <div class="bui-card-badge bui-bg-primary">New</div>
-            <img class="bui-card-img-left" src="https://picjumbo.com/wp-content/uploads/view-of-the-golden-gate-bridge-vertical-free-photo-1080x1620.jpg" alt="card-image">
-            <div class="bui-card-body">
-                <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
-                <p class="bui-card-text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
-                <button class="bui-btn bui-btn-primary">Go somewhere</button>
-                <button class="bui-btn bui-btn-info"><i class="bi bi-heart"></i></button>
-            </div>
-        </div>
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <div class="bui-avatar">SR</div>
+                <div class="bui-avatar bui-bg-primary">AD</div>
+                <div class="bui-avatar bui-bg-info">FA</div>
+                </code></pre>
+                </div>
+            </section>
+            
+            <section class="main-section" id="buiAlert">
+                <header><i class="bi bi-bookmark-fill"></i> Alert</header>
+                <p>Default alert can be created by class name as <code>.bui-alert</code> to <code>div</code> element.</p>
+
+                <div class="bui-example">
+                    <div class="bui-alert">
+                        <p>A simple default alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                        <button class="bui-alert-close">X</button>
+                    </div>
+                    <div class="bui-alert bui-alert-primary">
+                        <p>A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                        <button class="bui-alert-close">X</button>
+                    </div>
+                    <div class="bui-alert bui-alert-secondary">
+                        <p>A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                        <button class="bui-alert-close">X</button>
+                    </div>
+                    <div class="bui-alert bui-alert-success">
+                        <p>A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                        <button class="bui-alert-close">X</button>
+                    </div>
+                    <div class="bui-alert bui-alert-info">
+                        <p>A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                        <button class="bui-alert-close">X</button>
+                    </div>
+
+                    <div class="bui-alert bui-alert-warning">
+                        <p>A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                        <button class="bui-alert-close">X</button>
+                    </div>
+                    <div class="bui-alert bui-alert-danger">
+                        <p>A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                        <button class="bui-alert-close">X</button>
+                    </div>
+                    <div class="bui-alert bui-alert-light">
+                        <p>A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                        <button class="bui-alert-close">X</button>
+                    </div>
+                    <div class="bui-alert bui-alert-dark">
+                        <p>A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                        <button class="bui-alert-close">X</button>
+                    </div>
+                </div>
+
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <div class="bui-alert">
+                    <p>A simple default alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                    <button class="bui-alert-close">X</button>
+                </div>
+
+                <div class="bui-alert bui-alert-primary">
+                    <p>A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                    <button class="bui-alert-close">X</button>
+                </div>
+
+                <div class="bui-alert bui-alert-secondary">
+                    <p>A simple secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                    <button class="bui-alert-close">X</button>
+                </div>
+
+                <div class="bui-alert bui-alert-success">
+                    <p>A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                    <button class="bui-alert-close">X</button>
+                </div>
+
+                <div class="bui-alert bui-alert-info">
+                    <p>A simple info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                    <button class="bui-alert-close">X</button>
+                </div>
+
+                <div class="bui-alert bui-alert-warning">
+                    <p>A simple warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                    <button class="bui-alert-close">X</button>
+                </div>
+
+                <div class="bui-alert bui-alert-danger">
+                    <p>A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                    <button class="bui-alert-close">X</button>
+                </div>
+
+                <div class="bui-alert bui-alert-light">
+                    <p>A simple light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                    <button class="bui-alert-close">X</button>
+                </div>
+
+                <div class="bui-alert bui-alert-dark">
+                    <p>A simple dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
+                    <button class="bui-alert-close">X</button>
+                </div>
+                </code></pre>
+                </div>
+            </section>
+            
+            <section class="main-section" id="buiBadge">
+                <header><i class="bi bi-bookmark-fill"></i> Badge</header>
+                <p>Badge can be created by class name as <code>.bui-badge</code> to <code>span</code> element.</p>
+                
+                <header><i class="bi bi-chevron-right"></i> Default Badge</header>
+                <div class="bui-example bui-example-center">
+                    <span class="bui-badge">Default</span>
+                    <span class="bui-badge bui-bg-primary">Primary</span>
+                    <span class="bui-badge bui-bg-secondary">Secondary</span>
+                    <span class="bui-badge bui-bg-success">Success</span>
+                    <span class="bui-badge bui-bg-danger">Danger</span>
+                    <span class="bui-badge bui-bg-warning">Warning</span>
+                    <span class="bui-badge bui-bg-info">Info</span>
+                    <span class="bui-badge bui-bg-light">Light</span>
+                    <span class="bui-badge bui-bg-dark">Dark</span>
+                </div>
+                
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <span class="bui-badge">Default</span>
+                <span class="bui-badge bui-bg-primary">Primary</span>
+                <span class="bui-badge bui-bg-secondary">Secondary</span>
+                <span class="bui-badge bui-bg-success">Success</span>
+                <span class="bui-badge bui-bg-danger">Danger</span>
+                <span class="bui-badge bui-bg-warning">Warning</span>
+                <span class="bui-badge bui-bg-info">Info</span>
+                <span class="bui-badge bui-bg-light">Light</span>
+                <span class="bui-badge bui-bg-dark">Dark</span>
+                </code></pre>
+                </div>
+
+                <header><i class="bi bi-chevron-right"></i> Badge on Avatars</header>
+                <div class="bui-example bui-example-center">
+                    <div class="bui-avatar bui-bg-primary">SR<span class="bui-badge-round bui-badge-absolute bui-bg-success">12</span></div>
+                    <div class="bui-avatar"><img src="https://mui.com/static/images/avatar/1.jpg" alt="bui-avatar">
+                        <span class="bui-badge-round bui-badge-absolute bui-bg-info">0</span>
+                    </div>
+                </div>
+
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <div class="bui-avatar bui-bg-primary">
+                    SR <span class="bui-badge-round bui-badge-absolute bui-bg-success">12</span>
+                </div>
+                <div class="bui-avatar"><img src="https://mui.com/static/images/avatar/1.jpg" alt="bui-avatar">
+                    <span class="bui-badge-round bui-badge-absolute bui-bg-info">0</span>
+                </div>
+                </code></pre>
+                </div>
+                
+            </section>
+
+            <section class="main-section" id="buiButton">
+                <header><i class="bi bi-bookmark-fill"></i> Button</header>
+                <p>Button can be created by class name as <code>.bui-btn</code> to <code>button</code> element.</p>
+            
+                <header><i class="bi bi-chevron-right"></i> Default Button</header>
+                <div class="bui-example bui-example-center">
+                    <button class="bui-btn">Default</button>
+                    <button class="bui-btn bui-btn-primary">Primary</button>
+                    <button class="bui-btn bui-btn-secondary">Secondary</button>
+                    <button class="bui-btn bui-btn-success">Success</button>
+                    <button class="bui-btn bui-btn-danger">Danger</button>
+                    <button class="bui-btn bui-btn-warning">Warning</button>
+                    <button class="bui-btn bui-btn-info">Info</button>
+                    <button class="bui-btn bui-btn-light">Light</button>
+                    <button class="bui-btn bui-btn-dark">Dark</button>
+                    <button class="bui-btn bui-btn-link">Link</button>
+                </div>
+                
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <button class="bui-btn">Default</button>
+                <button class="bui-btn bui-btn-primary">Primary</button>
+                <button class="bui-btn bui-btn-secondary">Secondary</button>
+                <button class="bui-btn bui-btn-success">Success</button>
+                <button class="bui-btn bui-btn-danger">Danger</button>
+                <button class="bui-btn bui-btn-warning">Warning</button>
+                <button class="bui-btn bui-btn-info">Info</button>
+                <button class="bui-btn bui-btn-light">Light</button>
+                <button class="bui-btn bui-btn-dark">Dark</button>
+                <button class="bui-btn bui-btn-link">Link</button>
+                </code></pre>
+                </div>
+
+                <header><i class="bi bi-chevron-right"></i> Small Button</header>
+                <p>Small Button can be created by class name as <code>.bui-btn-sm</code>.</p>
+                <div class="bui-example bui-example-center">
+                    <button class="bui-btn bui-btn-sm">Default</button>
+                    <button class="bui-btn bui-btn-primary bui-btn-sm">Primary</button>
+                    <button class="bui-btn bui-btn-success bui-btn-sm">Success</button>
+                </div>
+
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <button class="bui-btn bui-btn-sm">Default</button>
+                <button class="bui-btn bui-btn-primary bui-btn-sm">Primary</button>
+                <button class="bui-btn bui-btn-success bui-btn-sm">Success</button>
+                </code></pre>
+                </div>
+
+                <header><i class="bi bi-chevron-right"></i> Large Button</header>
+                <p>Large Button can be created by class name as <code>.bui-btn-lg</code>.</p>
+                <div class="bui-example bui-example-center">
+                    <button class="bui-btn bui-btn-lg">Default</button>
+                    <button class="bui-btn bui-btn-primary bui-btn-lg">Primary</button>
+                    <button class="bui-btn bui-btn-success bui-btn-lg">Success</button>
+                </div>
+
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <button class="bui-btn bui-btn-lg">Default</button>
+                <button class="bui-btn bui-btn-primary bui-btn-lg">Primary</button>
+                <button class="bui-btn bui-btn-success bui-btn-lg">Success</button>
+                </code></pre>
+                </div>
+                
+            </section>
+
+            <section class="main-section" id="buiCard">
+                <header><i class="bi bi-bookmark-fill"></i> Card</header>
+                <p>Card can be created by class name as <code>.bui-card</code> to <code>div</code> element.</p>
+                
+                
+                <div class="bui-example bui-example-center">
+                    <div class="bui-card">
+                        <div class="bui-card-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                    </div>
+
+                    <div class="bui-card">
+                        <div class="bui-card-body">
+                            <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
+                            <p class="bui-card-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            </p>
+                            <button class="bui-btn bui-btn-primary">Go somewhere</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <div class="bui-card">
+                    <div class="bui-card-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+                </div>
+
+                <div class="bui-card">
+                    <div class="bui-card-body">
+                        <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
+                        <p class="bui-card-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <button class="bui-btn bui-btn-primary">Go somewhere</button>
+                    </div>
+                </div>
+                </code></pre>
+                </div>
+                
+
+            </section>
+
+            <section class="main-section" id="buiImage">
+                <header><i class="bi bi-bookmark-fill"></i> Image</header>
+                <p>Image can be modified by class name as <code>.bui-img-fluid</code> & <code>.bui-img-round</code> to <code>div</code> element.</p>
+                
+                
+                <div class="bui-example bui-example-center">
+                    
+                </div>
+                
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                </code></pre>
+                </div>
+            </section>
+
+            <section class="main-section" id="buiInput">
+                <header><i class="bi bi-bookmark-fill"></i> Input</header>
+                <p>Input can be modified by class name as <code>.bui-form-control</code> to input element.</p>
+                
+                
+                <div class="bui-example bui-example-center">
+                    
+                </div>
+                
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                </code></pre>
+                </div>
+            </section>
+        </main>
     </div>
-    
-    <div class="component">
-        <h1>Image Component</h1>
-    </div>
 
-    <div style="display: grid;grid-template-columns: 10rem 10rem;column-gap: 10px;">
-        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZHVjdHN8ZW58MHx8MHx8&w=1000&q=80" class="bui-img-fluid">
 
-        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHw%3D&w=1000&q=80" class="bui-img-round">
-    </div>
 
-    <div class="component">
-        <h1>Input Component</h1>
-    </div>
 
-    <div style="width: 95vw;">
-        <label for="email" class="bui-form-label">Email</label>
-        <input type="text" class="bui-form-control" name="email">
-        <br><br>
-        <label for="password" class="bui-form-label">Password</label>
-        <input type="password" class="bui-form-control" name="password">
-        <br><br>
-        <textarea class="bui-form-control" name="description"></textarea>
-        <br><br>
-        <input type="file" class="bui-form-control">
-        <br><br>
-        <label for="name" class="bui-form-label">First Name</label>
-        <input type="text" class="bui-form-control bui-is-valid" name="name">
-        <div class="bui-valid-feedback">Looks good!</div>
-        <br><br>
-        <label for="name" class="bui-form-label">Last Name</label>
-        <input type="text" class="bui-form-control bui-is-invalid" name="name">
-        <div class="bui-invalid-feedback">Please choose a username.</div>
-    </div>
 
-    <div style="margin-bottom: 100px;"></div>
+
+
+
+
+
+<script>
+document.querySelectorAll("code").forEach(function(element) {
+    element.innerHTML = element.innerHTML.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/prism.min.js" integrity="sha512-/Swpp6aCQ0smuZ+zpklJqMClcUlvxhpLf9aAcM7JjJrj2waCU4dikm3biOtMVAflOOeniW9qzaNXNrbOAOWFCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+function scrollMenu(item) {
+let element = document.getElementById(item);
+    element.scrollIntoView({block: 'start',behavior: 'smooth',inline: 'start'});
+    toggleNav();
+}
+
+function toggleNav(){
+    let element = document.getElementById("navbar");
+    element.classList.toggle("active-nav");
+}
+</script>
 </body>
 </html>
