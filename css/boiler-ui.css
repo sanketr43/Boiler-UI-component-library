@@ -17,6 +17,10 @@
      --bui-dark: #111827;
  }
 
+ *, ::after, ::before {
+    box-sizing: border-box;
+}
+
  html{
      font-size: 100%;
      font-family: Arial, Helvetica, sans-serif;
@@ -51,6 +55,78 @@
 }
 
  /*image class END*/
+
+ /*margin & Padding spacing class START*/
+.bui-m-0{ margin: 0 !important; }
+.bui-m-1{ margin: 0.25rem !important; }
+.bui-m-2{ margin: 0.5rem !important; }
+.bui-m-3{ margin: 1rem !important; }
+.bui-m-4{ margin: 1.5rem !important; }
+.bui-m-5{ margin: 3rem !important; }
+
+.bui-mt-0{ margin-top: 0 !important; }
+.bui-mt-1{ margin-top: 0.25rem !important; }
+.bui-mt-2{ margin-top: 0.5rem !important; }
+.bui-mt-3{ margin-top: 1rem !important; }
+.bui-mt-4{ margin-top: 1.5rem !important; }
+.bui-mt-5{ margin-top: 3rem !important; }
+
+.bui-mb-0{ margin-bottom: 0 !important; }
+.bui-mb-1{ margin-bottom: 0.25rem !important; }
+.bui-mb-2{ margin-bottom: 0.5rem !important; }
+.bui-mb-3{ margin-bottom: 1rem !important; }
+.bui-mb-4{ margin-bottom: 1.5rem !important; }
+.bui-mb-5{ margin-bottom: 3rem !important; }
+
+.bui-ms-0{ margin-left: 0 !important; }
+.bui-ms-1{ margin-left: 0.25rem !important; }
+.bui-ms-2{ margin-left: 0.5rem !important; }
+.bui-ms-3{ margin-left: 1rem !important; }
+.bui-ms-4{ margin-left: 1.5rem !important; }
+.bui-ms-5{ margin-left: 3rem !important; }
+
+.bui-me-0{ margin-right: 0 !important; }
+.bui-me-1{ margin-right: 0.25rem !important; }
+.bui-me-2{ margin-right: 0.5rem !important; }
+.bui-me-3{ margin-right: 1rem !important; }
+.bui-me-4{ margin-right: 1.5rem !important; }
+.bui-me-5{ margin-right: 3rem !important; }
+
+.bui-p-0{ padding: 0 !important; }
+.bui-p-1{ padding: 0.25rem !important; }
+.bui-p-2{ padding: 0.5rem !important; }
+.bui-p-3{ padding: 1rem !important; }
+.bui-p-4{ padding: 1.5rem !important; }
+.bui-p-5{ padding: 3rem !important; }
+
+.bui-pt-0{ padding-top: 0 !important; }
+.bui-pt-1{ padding-top: 0.25rem !important; }
+.bui-pt-2{ padding-top: 0.5rem !important; }
+.bui-pt-3{ padding-top: 1rem !important; }
+.bui-pt-4{ padding-top: 1.5rem !important; }
+.bui-pt-5{ padding-top: 3rem !important; }
+
+.bui-pb-0{ padding-bottom: 0 !important; }
+.bui-pb-1{ padding-bottom: 0.25rem !important; }
+.bui-pb-2{ padding-bottom: 0.5rem !important; }
+.bui-pb-3{ padding-bottom: 1rem !important; }
+.bui-pb-4{ padding-bottom: 1.5rem !important; }
+.bui-pb-5{ padding-bottom: 3rem !important; }
+
+.bui-ps-0{ padding-left: 0 !important; }
+.bui-ps-1{ padding-left: 0.25rem !important; }
+.bui-ps-2{ padding-left: 0.5rem !important; }
+.bui-ps-3{ padding-left: 1rem !important; }
+.bui-ps-4{ padding-left: 1.5rem !important; }
+.bui-ps-5{ padding-left: 3rem !important; }
+
+.bui-pe-0{ padding-right: 0 !important; }
+.bui-pe-1{ padding-right: 0.25rem !important; }
+.bui-pe-2{ padding-right: 0.5rem !important; }
+.bui-pe-3{ padding-right: 1rem !important; }
+.bui-pe-4{ padding-right: 1.5rem !important; }
+.bui-pe-5{ padding-right: 3rem !important; }
+  /*margin & Padding spacing class END*/
 
  /*Text colors START*/
 .bui-text-white{
@@ -558,3 +634,36 @@
 }
 
 /*Form control END*/
+
+
+
+
+
+
+
+/*Media Queries START*/
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+@media screen and (max-width: 480px) {
+    .bui-card-row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bui-card-img-left{
+        width: auto;
+        height: 12.5rem;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+
+}
+/*Media Queries END*/

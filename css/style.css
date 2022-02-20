@@ -67,7 +67,7 @@ nav#navbar {
 	position: fixed;
     padding: 80px 20px 20px 20px;
     border-right: solid 1px #CCC;
-    height: 86vh;
+    height: 100vh;
     min-width: 150px;
     overflow: auto;
     background: white;
@@ -165,7 +165,7 @@ p{
     
     nav#navbar{
         left: -200px;
-        height: 90vh;
+        height: 100vh;
     }
 
     div.main-body {
@@ -178,8 +178,6 @@ p{
         left: 0;
     }
 }
-
-
 
 @media screen and (max-width: 640px) {
     .navbar-logo{

@@ -73,10 +73,21 @@
             
             <section class="main-section" id="buiAlert">
                 <header><i class="bi bi-bookmark-fill"></i> Alert</header>
-                <p>Default alert can be created by class name as <code>.bui-alert</code> to <code>div</code> element.</p>
+                <p>Default alert can be created by class name as <code>.bui-alert</code> to <code>div</code> element. Below is the list of available classes with demo.</p>
+                <ul>
+                    <li><code>.bui-alert</code></li>
+                    <li><code>.bui-alert-primary</code></li>
+                    <li><code>.bui-alert-secondary</code></li>
+                    <li><code>.bui-alert-success</code></li>
+                    <li><code>.bui-alert-info</code></li>
+                    <li><code>.bui-alert-warning</code></li>
+                    <li><code>.bui-alert-danger</code></li>
+                    <li><code>.bui-alert-light</code></li>
+                    <li><code>.bui-alert-dark</code></li>
+                </ul>
 
                 <div class="bui-example">
-                    <div class="bui-alert">
+                    <div class="bui-alert"> 
                         <p>A simple default alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.</p>
                         <button class="bui-alert-close">X</button>
                     </div>
@@ -219,7 +230,18 @@
 
             <section class="main-section" id="buiButton">
                 <header><i class="bi bi-bookmark-fill"></i> Button</header>
-                <p>Button can be created by class name as <code>.bui-btn</code> to <code>button</code> element.</p>
+                <p>Button can be created by class name as <code>.bui-btn</code> to <code>button</code> element. Below are the diffrent type of available button classes with demo</p>
+                <ul>
+                    <li><code>.bui-btn</code></li>
+                    <li><code>.bui-btn-primary</code></li>
+                    <li><code>.bui-btn-secondary</code></li>
+                    <li><code>.bui-btn-success</code></li>
+                    <li><code>.bui-btn-info</code></li>
+                    <li><code>.bui-btn-warning</code></li>
+                    <li><code>.bui-btn-danger</code></li>
+                    <li><code>.bui-btn-light</code></li>
+                    <li><code>.bui-btn-dark</code></li>
+                </ul>
             
                 <header><i class="bi bi-chevron-right"></i> Default Button</header>
                 <div class="bui-example bui-example-center">
@@ -251,7 +273,7 @@
                 </div>
 
                 <header><i class="bi bi-chevron-right"></i> Small Button</header>
-                <p>Small Button can be created by class name as <code>.bui-btn-sm</code>.</p>
+                <p>Small Button can be created by adding extra class name as <code>.bui-btn-sm</code>.</p>
                 <div class="bui-example bui-example-center">
                     <button class="bui-btn bui-btn-sm">Default</button>
                     <button class="bui-btn bui-btn-primary bui-btn-sm">Primary</button>
@@ -267,7 +289,7 @@
                 </div>
 
                 <header><i class="bi bi-chevron-right"></i> Large Button</header>
-                <p>Large Button can be created by class name as <code>.bui-btn-lg</code>.</p>
+                <p>Large Button can be created by adding extra class name as <code>.bui-btn-lg</code>.</p>
                 <div class="bui-example bui-example-center">
                     <button class="bui-btn bui-btn-lg">Default</button>
                     <button class="bui-btn bui-btn-primary bui-btn-lg">Primary</button>
@@ -286,44 +308,141 @@
 
             <section class="main-section" id="buiCard">
                 <header><i class="bi bi-bookmark-fill"></i> Card</header>
-                <p>Card can be created by class name as <code>.bui-card</code> to <code>div</code> element.</p>
+                <p>Card can be created by class name as <code>.bui-card</code> followed by <code>.bui-card-body</code> to child <code>div</code> element. Below are the various type of card class format with example.</p>
                 
-                
+                <header><i class="bi bi-chevron-right"></i> Simple Card with content body</header>
                 <div class="bui-example bui-example-center">
                     <div class="bui-card">
                         <div class="bui-card-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
                     </div>
-
-                    <div class="bui-card">
-                        <div class="bui-card-body">
-                            <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
-                            <p class="bui-card-text">
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                            </p>
-                            <button class="bui-btn bui-btn-primary">Go somewhere</button>
-                        </div>
-                    </div>
                 </div>
-                
                 <div class="bui-code-example">
                 <pre><code class="language-html">
                 <div class="bui-card">
                     <div class="bui-card-body">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
                 </div>
-
+                </code></pre>
+                </div>
+                
+                <header><i class="bi bi-chevron-right"></i>Card with Title & paragraph element, content body</header>
+                <div class="bui-example bui-example-center">
                 <div class="bui-card">
                     <div class="bui-card-body">
                         <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
                         <p class="bui-card-text">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>
-                        <button class="bui-btn bui-btn-primary">Go somewhere</button>
+                        <button class="bui-btn bui-btn-primary">Visit Homepage</button>
+                    </div>
+                </div>
+                </div>
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <div class="bui-card">
+                    <div class="bui-card-body">
+                        <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
+                        <p class="bui-card-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <button class="bui-btn bui-btn-primary">Visit Homepage</button>
                     </div>
                 </div>
                 </code></pre>
                 </div>
                 
+                <header><i class="bi bi-chevron-right"></i>Card with Top Image & Badge</header>
+                <div class="bui-example bui-example-center">
+                <div class="bui-card" style="max-width: 20rem;">
+                    <div class="bui-card-badge bui-bg-primary">Trending</div>
+                    <img class="bui-card-img-top" src="https://cdn.pixabay.com/photo/2022/02/02/19/51/bird-6989306_960_720.jpg" alt="card-image">
+                    <div class="bui-card-body">
+                        <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
+                        <p class="bui-card-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <button class="bui-btn bui-btn-primary">Add to cart</button>
+                        <button class="bui-btn bui-btn-info"><i class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+                </div>
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <div class="bui-card" style="max-width: 20rem;">
+                    <div class="bui-card-badge bui-bg-primary">Trending</div>
+                    <img class="bui-card-img-top" src="https://cdn.pixabay.com/photo/2022/02/02/19/51/bird-6989306_960_720.jpg" alt="card-image">
+                    <div class="bui-card-body">
+                        <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
+                        <p class="bui-card-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <button class="bui-btn bui-btn-primary">Add to cart</button>
+                        <button class="bui-btn bui-btn-info"><i class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+                </code></pre>
+                </div>
 
+                <header><i class="bi bi-chevron-right"></i>Image Card with Text overlay</header>
+                <div class="bui-example bui-example-center">
+                <div class="bui-card" style="width: 20rem;">
+                    <div class="bui-card-badge bui-bg-danger">NEW</div>
+                    <div class="bui-card-img">
+                        <img class="bui-card-img-top" src="https://cdn.pixabay.com/photo/2021/11/26/17/26/desert-6826299_960_720.jpg" alt="card-image">
+                        <div class="bui-card-img-overlay">
+                            <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
+                            <p class="bui-card-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <div class="bui-card" style="width: 20rem;">
+                    <div class="bui-card-badge bui-bg-danger">NEW</div>
+                    <div class="bui-card-img">
+                        <img class="bui-card-img-top" src="https://cdn.pixabay.com/photo/2021/11/26/17/26/desert-6826299_960_720.jpg" alt="card-image">
+                        <div class="bui-card-img-overlay">
+                            <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
+                            <p class="bui-card-text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                </code></pre>
+                </div>
+
+                <header><i class="bi bi-chevron-right"></i>Horizontal Card with shadow</header>
+                <div class="bui-example bui-example-center">
+                <div class="bui-card-row bui-shadow" style="width: 30rem;">
+                    <div class="bui-card-badge bui-bg-primary">New</div>
+                    <img class="bui-card-img-left" src="https://cdn.pixabay.com/photo/2022/02/12/08/04/girl-7008608_960_720.jpg" alt="card-image">
+                    <div class="bui-card-body">
+                        <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
+                        <p class="bui-card-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <button class="bui-btn bui-btn-primary">Know more</button>
+                        <button class="bui-btn bui-btn-info"><i class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+                </div>
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <div class="bui-card-row bui-shadow" style="width: 30rem;">
+                    <div class="bui-card-badge bui-bg-primary">New</div>
+                    <img class="bui-card-img-left" src="https://cdn.pixabay.com/photo/2022/02/12/08/04/girl-7008608_960_720.jpg" alt="card-image">
+                    <div class="bui-card-body">
+                        <h5 class="bui-card-title">Lorem Ipsum is simply dummy</h5>
+                        <p class="bui-card-text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                        <button class="bui-btn bui-btn-primary">Know more</button>
+                        <button class="bui-btn bui-btn-info"><i class="bi bi-heart"></i></button>
+                    </div>
+                </div>
+                </code></pre>
+                </div>
             </section>
 
             <section class="main-section" id="buiImage">
@@ -332,11 +451,15 @@
                 
                 
                 <div class="bui-example bui-example-center">
-                    
-                </div>
+                    <img class="bui-img-fluid" style="width: 15rem;" src="https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952__340.jpg">
                 
+                    <img class="bui-img-round" style="width: 15rem;" src="https://cdn.pixabay.com/photo/2020/11/25/14/14/cat-5775895__340.jpg">
+                </div>
                 <div class="bui-code-example">
                 <pre><code class="language-html">
+                <img class="bui-img-fluid" style="width: 15rem;" src="https://cdn.pixabay.com/photo/2022/02/12/13/29/desert-7008952__340.jpg">
+            
+                <img class="bui-img-round" style="width: 15rem;" src="https://cdn.pixabay.com/photo/2020/11/25/14/14/cat-5775895__340.jpg">
                 </code></pre>
                 </div>
             </section>
@@ -345,15 +468,85 @@
                 <header><i class="bi bi-bookmark-fill"></i> Input</header>
                 <p>Input can be modified by class name as <code>.bui-form-control</code> to input element.</p>
                 
-                
-                <div class="bui-example bui-example-center">
-                    
+                <header><i class="bi bi-chevron-right"></i> Default Input</header>
+                <div class="bui-example">
+                    <div class="bui-mb-3">
+                        <label for="email" class="bui-form-label">Email</label>
+                        <input type="text" class="bui-form-control" name="email">
+                    </div>
+                    <div class="bui-mb-3">
+                        <label for="password" class="bui-form-label">Password</label>
+                        <input type="password" class="bui-form-control" name="password">
+                    </div>
+                    <div class="bui-mb-3">
+                        <label for="description" class="bui-form-label">Description</label>
+                        <textarea name="description" class="bui-form-control"></textarea>
+                    </div>
+                    <div class="bui-mb-3">
+                        <label for="image" class="bui-form-label">Upload Image</label>
+                        <input type="file" class="bui-form-control" name="image">
+                    </div>
                 </div>
-                
                 <div class="bui-code-example">
                 <pre><code class="language-html">
+                <div class="bui-mb-3">
+                    <label for="email" class="bui-form-label">Email</label>
+                    <input type="text" class="bui-form-control" name="email">
+                </div>
+                <div class="bui-mb-3">
+                    <label for="password" class="bui-form-label">Password</label>
+                    <input type="password" class="bui-form-control" name="password">
+                </div>
+                <div class="bui-mb-3">
+                    <label for="description" class="bui-form-label">Description</label>
+                    <textarea name="description" class="bui-form-control"></textarea>
+                </div>
+                <div class="bui-mb-3">
+                    <label for="image" class="bui-form-label">Upload Image</label>
+                    <input type="file" class="bui-form-control" name="image">
+                </div>
                 </code></pre>
                 </div>
+
+                <header><i class="bi bi-chevron-right"></i> Input with validation and errors style</header>
+                <div class="bui-example">
+                    <div class="bui-mb-3">
+                        <label for="name" class="bui-form-label">First Name</label>
+                        <input type="text" class="bui-form-control bui-is-valid" name="name">
+                        <div class="bui-valid-feedback">Looks good!</div>
+                    </div>
+                    <div class="bui-mb-3">
+                        <label for="name" class="bui-form-label">Last Name</label>
+                        <input type="text" class="bui-form-control bui-is-invalid" name="name">
+                        <div class="bui-invalid-feedback">Please choose a username.</div>
+                    </div>
+                    <div class="bui-mb-3">
+                        <label for="description" class="bui-form-label">Description</label>
+                        <textarea name="description" class="bui-form-control bui-is-invalid"></textarea>
+                        <div class="bui-invalid-feedback">Enter the description.</div>
+                    </div>
+                </div>
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <div class="bui-mb-3">
+                    <label for="name" class="bui-form-label">First Name</label>
+                    <input type="text" class="bui-form-control bui-is-valid" name="name">
+                    <div class="bui-valid-feedback">Looks good!</div>
+                </div>
+                <div class="bui-mb-3">
+                    <label for="name" class="bui-form-label">Last Name</label>
+                    <input type="text" class="bui-form-control bui-is-invalid" name="name">
+                    <div class="bui-invalid-feedback">Please choose a username.</div>
+                </div>
+                <div class="bui-mb-3">
+                    <label for="description" class="bui-form-label">Description</label>
+                    <textarea name="description" class="bui-form-control bui-is-invalid"></textarea>
+                    <div class="bui-invalid-feedback">Enter the description.</div>
+                </div>
+                </code></pre>
+                </div>
+
+
             </section>
         </main>
     </div>
