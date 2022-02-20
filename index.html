@@ -32,6 +32,9 @@
             <a onclick="scrollMenu('buiCard');" class="nav-link">Card</a>
             <a onclick="scrollMenu('buiImage');" class="nav-link">Image</a>
             <a onclick="scrollMenu('buiInput');" class="nav-link">Input</a>
+            <a onclick="scrollMenu('buiList');" class="nav-link">List</a>
+            <a onclick="scrollMenu('buiNavigation');" class="nav-link">Navigation</a>
+            <a onclick="scrollMenu('buiSnackbar');" class="nav-link">Snackbar</a>
 
             <header class="bui-mt-3">Utilities</header>
             <a onclick="scrollMenu('buiTextUtilities');" class="nav-link">Text Utilities</a>
@@ -553,6 +556,193 @@
 
             </section>
 
+            <section class="main-section" id="buiList">
+                <header><i class="bi bi-bookmark-fill"></i> List</header>
+                <p>We have normal list which has spacing around it. And there is stack list which has block around it.</p>
+                
+                <header><i class="bi bi-chevron-right"></i> Normal List</header>
+                <div class="bui-example">
+                    <ul>
+                        <li>HTML/HTML5</li>
+                        <li>CSS/CSS3</li>
+                        <li>Javascript</li>
+                        <li>ReactJs</li>
+                        <li>Redux</li>
+                    </ul>
+                </div>
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <ul>
+                    <li>HTML/HTML5</li>
+                    <li>CSS/CSS3</li>
+                    <li>Javascript</li>
+                    <li>ReactJs</li>
+                    <li>Redux</li>
+                </ul>
+                </code></pre>
+                </div>
+
+                <header><i class="bi bi-chevron-right"></i> Stacked List</header>
+                <div class="bui-example">
+                    <ul class="bui-list-group">
+                        <li class="bui-list-group-item">HTML/HTML5</li>
+                        <li class="bui-list-group-item">CSS/CSS3</li>
+                        <li class="bui-list-group-item">Javascript</li>
+                        <li class="bui-list-group-item">ReactJs</li>
+                        <li class="bui-list-group-item">Redux</li>
+                    </ul>
+                </div>
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <ul class="bui-list-group">
+                    <li class="bui-list-group-item">HTML/HTML5</li>
+                    <li class="bui-list-group-item">CSS/CSS3</li>
+                    <li class="bui-list-group-item">Javascript</li>
+                    <li class="bui-list-group-item">ReactJs</li>
+                    <li class="bui-list-group-item">Redux</li>
+                </ul>
+                </code></pre>
+                </div>
+            </section>
+
+            <section class="main-section" id="buiNavigation">
+                <header><i class="bi bi-bookmark-fill"></i> Navigation</header>
+                <p>Below are the diffrent types of navigaion along with classes.</p>
+                
+                <div class="bui-example">
+                    <nav class="bui-navbar">
+                        <div class="bui-navbar-container">
+                            <div class="bui-navbar-logo">BoilerUI</div>
+                            <div class="bui-navbar-menu">
+                                <div class="bui-navbar-menu-item">Home</div>
+                                <div class="bui-navbar-menu-item">About</div>
+                                <div class="bui-navbar-menu-item">Services</div>
+                                <div class="bui-navbar-menu-item">Contact</div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="bui-m-3"></div>
+
+                    <nav class="bui-navbar bui-navbar-dark">
+                        <div class="bui-navbar-container">
+                            <div class="bui-navbar-logo">BoilerUI</div>
+                            <div class="bui-navbar-menu">
+                                <div class="bui-navbar-menu-item">Home</div>
+                                <div class="bui-navbar-menu-item">About</div>
+                                <div class="bui-navbar-menu-item">Services</div>
+                                <div class="bui-navbar-menu-item">Contact</div>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="bui-m-3"></div>
+
+                    <nav class="bui-navbar bui-navbar-gray">
+                        <div class="bui-navbar-container">
+                            <div class="bui-navbar-logo">
+                                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="">
+                                Instagram
+                            </div>
+                            <div class="bui-navbar-menu">
+                                <input type="text" class="bui-form-control" placeholder="search">
+                            </div>
+                            <div class="bui-navbar-menu">
+                                <div class="bui-navbar-menu-item">Home</div>
+                                <div class="bui-navbar-menu-item">About</div>
+                                <div class="bui-navbar-menu-item">Services</div>
+                                <div class="bui-navbar-menu-item">Contact</div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <nav class="bui-navbar">
+                    <div class="bui-navbar-container">
+                        <div class="bui-navbar-logo">BoilerUI</div>
+                        <div class="bui-navbar-menu">
+                            <div class="bui-navbar-menu-item">Home</div>
+                            <div class="bui-navbar-menu-item">About</div>
+                            <div class="bui-navbar-menu-item">Services</div>
+                            <div class="bui-navbar-menu-item">Contact</div>
+                        </div>
+                    </div>
+                </nav>
+
+
+                <nav class="bui-navbar bui-navbar-dark">
+                    <div class="bui-navbar-container">
+                        <div class="bui-navbar-logo">BoilerUI</div>
+                        <div class="bui-navbar-menu">
+                            <div class="bui-navbar-menu-item">Home</div>
+                            <div class="bui-navbar-menu-item">About</div>
+                            <div class="bui-navbar-menu-item">Services</div>
+                            <div class="bui-navbar-menu-item">Contact</div>
+                        </div>
+                    </div>
+                </nav>
+
+
+                <nav class="bui-navbar bui-navbar-gray">
+                    <div class="bui-navbar-container">
+                        <div class="bui-navbar-logo">
+                            <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="">
+                            Instagram
+                        </div>
+                        <div class="bui-navbar-menu">
+                            <input type="text" class="bui-form-control" placeholder="search">
+                        </div>
+                        <div class="bui-navbar-menu">
+                            <div class="bui-navbar-menu-item">Home</div>
+                            <div class="bui-navbar-menu-item">About</div>
+                            <div class="bui-navbar-menu-item">Services</div>
+                            <div class="bui-navbar-menu-item">Contact</div>
+                        </div>
+                    </div>
+                </nav>
+                </code></pre>
+                </div>
+            </section>
+
+            <section class="main-section" id="buiSnackbar">
+                <header><i class="bi bi-bookmark-fill"></i> Snackbar</header>
+                
+                <div class="bui-example bui-example-center">
+                    <div class="bui-snakbar">
+                        <p>Can't send photo. Retry in 5 seconds.</p>
+                        <button>Retry</button>
+                        <span><i class="bi bi-x"></i></span>
+                    </div>   
+
+                    <div class="bui-snakbar bui-snakbar-float" id="snackbarOne" style="display: none;">
+                        <p>Can't send photo. Retry in 10 seconds.</p>
+                        <button>Retry</button>
+                        <span onclick="hideSnackbar();"><i class="bi bi-x"></i></span>
+                    </div>
+                    
+                    <button onclick="showSnackbar();" class="bui-btn bui-btn-primary">Click Me</button>
+                </div>
+                
+                
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <div class="bui-snakbar">
+                    <p>Can't send photo. Retry in 5 seconds.</p>
+                    <button>Retry</button>
+                    <span><i class="bi bi-x"></i></span>
+                </div>   
+
+                <div class="bui-snakbar bui-snakbar-float" id="snackbarOne" style="display: none;">
+                    <p>Can't send photo. Retry in 10 seconds.</p>
+                    <button>Retry</button>
+                    <span onclick="hideSnackbar();"><i class="bi bi-x"></i></span>
+                </div>
+                </code></pre>
+                </div>
+            </section>
+
             <section class="main-section" id="buiTextUtilities">
                 <header><i class="bi bi-bookmark-fill"></i> Text Utilities</header>
                 <p>Below are the diffrent text Utilities group together.</p>
@@ -690,6 +880,24 @@ function toggleNav(){
     let element = document.getElementById("navbar");
     element.classList.toggle("active-nav");
 }
+</script>
+<script>
+    function showSnackbar(){
+        let snackbar = document.getElementById("snackbarOne"); 
+        snackbar.style.display = "flex";
+        setTimeout(function(){
+            if(snackbar.style.display == "flex"){
+                snackbar.style.display = "none";
+            }
+        },5000);
+    }
+
+    function hideSnackbar(){
+        let snackbar = document.getElementById("snackbarOne"); 
+        if(snackbar.style.display == "flex"){
+                snackbar.style.display = "none";
+            }
+    }
 </script>
 </body>
 </html>

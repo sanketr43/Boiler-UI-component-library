@@ -177,6 +177,10 @@ p{
     nav#navbar.active-nav{
         left: 0;
     }
+
+    .bui-navbar-menu{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 640px) {
