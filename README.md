@@ -9,7 +9,7 @@ We tried to keep thing simple as name says BoilerUI, so you can add more customi
 
 You can find the documentation & preview of the element on this link. 
 
-[Documentation & Preview](https://sanketr43.github.io/Boiler-UI-component-library/index.html)
+[Documentation & Preview](https://sanketr43.github.io/Boiler-UI-component-library/index.html){:target="_blank"}
 
 
 ## Components
