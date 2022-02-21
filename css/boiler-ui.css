@@ -914,7 +914,17 @@ ul li{
 }
 /*modal component end*/
 
+/*Rating component START*/
+.bui-rating i:hover{
+    color: orange;
+}
 
+
+.bui-rating .bui-checked{
+    color: orange;
+}
+
+/*Rating component END*/
 
 /*Media Queries START*/
 @media screen and (max-width: 768px) {
