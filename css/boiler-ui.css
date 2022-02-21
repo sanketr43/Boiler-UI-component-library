@@ -926,13 +926,25 @@ ul li{
 
 /*Rating component END*/
 
+/*Grid component start*/
+.bui-grid-three{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+/*Grid component END*/
+
 /*Media Queries START*/
 @media screen and (max-width: 768px) {
-
+    
 }
 
 @media screen and (max-width: 640px) {
-
+    .bui-grid-three{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -950,6 +962,11 @@ ul li{
         width: 95%;
     }
 
+    .bui-grid-three{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
 }
 
 @media screen and (max-width: 380px) {
