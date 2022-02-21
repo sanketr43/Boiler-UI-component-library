@@ -35,6 +35,7 @@
             <a onclick="scrollMenu('buiList');" class="nav-link">List</a>
             <a onclick="scrollMenu('buiNavigation');" class="nav-link">Navigation</a>
             <a onclick="scrollMenu('buiSnackbar');" class="nav-link">Snackbar</a>
+            <a onclick="scrollMenu('buiModal');" class="nav-link">Modal</a>
 
             <header class="bui-mt-3">Utilities</header>
             <a onclick="scrollMenu('buiTextUtilities');" class="nav-link">Text Utilities</a>
@@ -743,6 +744,70 @@
                 </div>
             </section>
 
+            <section class="main-section" id="buiModal">
+                <header><i class="bi bi-bookmark-fill"></i> Modal</header>
+                
+                <div class="bui-example bui-example-center">
+                    <div class="bui-modal">
+                        <div class="bui-modal-dialog">
+                            <div class="bui-modal-content">
+                                <div class="bui-modal-header">
+                                    <h5 class="bui-modal-title">Modal Title</h5>
+                                    <button class="bui-btn bui-btn-close"></button>
+                                </div>
+                                <div class="bui-modal-body">
+                                    <p>Modal body text goes here.</p>
+                                </div>
+                                <div class="bui-modal-footer">
+                                    <button class="bui-btn bui-btn-secondary">Close</button>
+                                    <button class="bui-btn bui-btn-primary">Save Changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button onclick="toggleModal('modalBlock');" class="bui-btn bui-btn-primary">Open Modal</button>
+                </div>
+
+                <div class="bui-modal" id="modalBlock">
+                    <div class="bui-modal-dialog">
+                        <div class="bui-modal-content">
+                            <div class="bui-modal-header">
+                                <h5 class="bui-modal-title">Modal Title</h5>
+                                <button class="bui-btn bui-btn-close" onclick="toggleModal('modalBlock');" ></button>
+                            </div>
+                            <div class="bui-modal-body">
+                                <p>Modal body text goes here.</p>
+                            </div>
+                            <div class="bui-modal-footer">
+                                <button class="bui-btn bui-btn-secondary" onclick="toggleModal('modalBlock');" >Close</button>
+                                <button class="bui-btn bui-btn-primary">Save Changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <div class="bui-modal-dialog">
+                    <div class="bui-modal-content">
+                        <div class="bui-modal-header">
+                            <h5 class="bui-modal-title">Modal Title</h5>
+                            <button class="bui-btn bui-btn-close" onclick="toggleModal('modalBlock');" ></button>
+                        </div>
+                        <div class="bui-modal-body">
+                            <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="bui-modal-footer">
+                            <button class="bui-btn bui-btn-secondary" onclick="toggleModal('modalBlock');" >Close</button>
+                            <button class="bui-btn bui-btn-primary">Save Changes</button>
+                        </div>
+                    </div>
+                </div>
+                </code></pre>
+                </div>
+            </section>
+
             <section class="main-section" id="buiTextUtilities">
                 <header><i class="bi bi-bookmark-fill"></i> Text Utilities</header>
                 <p>Below are the diffrent text Utilities group together.</p>
@@ -898,6 +963,12 @@ function toggleNav(){
                 snackbar.style.display = "none";
             }
     }
+</script>
+<script>
+function toggleModal(ele){
+    let modal = document.getElementById(ele);
+    modal.classList.toggle("bui-show");
+}
 </script>
 </body>
 </html>

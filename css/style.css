@@ -183,6 +183,12 @@ p{
     }
 }
 
+.bui-example .bui-modal {
+    position: static;
+    display: block;
+    z-index: 9;
+}
+
 @media screen and (max-width: 640px) {
     .navbar-logo{
         font-size: 16px;
