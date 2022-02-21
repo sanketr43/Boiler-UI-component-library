@@ -24,10 +24,12 @@ You can find the documentation & preview of the element on this link.
 - Navigation
 - Snackbar
 - Modal
+- Rating
 
 ## Utilities
 - Text Utilities
 - Spacing
+- Grid
 
 BoilerUI is a lightweight HTML & CSS component Library.
 
