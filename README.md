@@ -1,4 +1,4 @@
-# Boiler-UI-component-library
+# Boiler UI component library
 ### A Simple HTML & CSS component library
 
 BoilerUI is the simple HTML & CSS component library with diffrent component that you can use for your next project.
