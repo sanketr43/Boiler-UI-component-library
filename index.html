@@ -24,6 +24,8 @@
 
     <div class="main-body">
         <nav id="navbar">
+            <header>Installation</header>
+            <a onclick="scrollMenu('buiGuide');" class="nav-link">Guide</a>
             <header>Components</header>
             <a onclick="scrollMenu('buiAvatar');" class="nav-link">Avatar</a>
             <a onclick="scrollMenu('buiAlert');" class="nav-link">Alert</a>
@@ -45,6 +47,33 @@
         </nav>
   
         <main id="main-doc">
+            <section class="main-section" id="buiGuide">
+                <header><i class="bi bi-bookmark-fill"></i>Installation Guide</header>
+                <p><strong>A Simple HTML & CSS component library</strong></p>
+                <p>BoilerUI is the simple HTML & CSS component library with diffrent component that you can use for your next project. BoilerUI gives the base component to start your next project quickly, without doing everyting from scratch. We tried to keep thing simple as name says BoilerUI, so you can add more customization to it, according you your project need.</p>
+
+                <p>You can simply download or clone the github repo. File structure are given below</p>
+
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                /CSS/boilerui.css
+                /CSS/style.css
+                README.md
+                index.html
+                </code></pre>
+                </div>
+
+                <p>After download you open HTML file & preview in brower. You will be able to see complete documentation and preview of the diffrent component.</p>
+
+                <p>To use BoilerUI library in your next project, you can simple use, css/boilerui.css library directly like below.</p>
+                
+                <div class="bui-code-example">
+                <pre><code class="language-html">
+                <link rel="stylesheet" href="css/boiler-ui.css">
+                </code></pre>
+                </div>
+            </section>
+
             <section class="main-section" id="buiAvatar">
                 <header><i class="bi bi-bookmark-fill"></i> Avatar</header>
                 <p>Avatar can be created by class name as <code>.bui-avatar</code> to <code>div</code> element.</p>
