@@ -383,6 +383,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 3px;
 }
 
+.bui-badge-icon{
+    position: relative;
+}
+
 .bui-badge-round{
     display: flex;
     justify-content: center;
@@ -548,6 +552,17 @@ h1, h2, h3, h4, h5, h6 {
 .bui-card-body{
     padding: 0.938rem 0.938rem;
     flex: 1 1 auto;
+}
+
+.bui-card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.bui-card-dismiss{
+    cursor: pointer;
 }
 
 .bui-card-title{
